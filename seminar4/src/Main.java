@@ -51,7 +51,7 @@ public class Main {
     public static void printAndRemove(List<LinkedList<String>> linkedLists, int num) {
         if (num >= 0&& num< linkedLists.size()&&!linkedLists.get(num).isEmpty()){
             String text = linkedLists.get(num).removeFirst();
-            System.out.println("deleted from " + num + text);
+            System.out.printf("deleted from %d %s",num,text);
         }else{
             System.out.println("it's empty");
         }
